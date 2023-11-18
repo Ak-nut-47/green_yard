@@ -32,7 +32,7 @@ const Navbar = () => {
         <hr />
       </Flex>
       {/* -------------------------------------------------------------- */}
-      <Flex justifyContent={"space-evenly"}>
+      <Flex justifyContent={"space-evenly"} pt={4} pb={4}>
         <Box
           _hover={{
             color: "#008067",
