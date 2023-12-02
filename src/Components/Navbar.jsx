@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { color } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -19,16 +19,32 @@ const Navbar = () => {
         >
           Free Shipping Across Duliajan
         </Text>
-        <Text
-          color={"#009a7b"}
-          fontSize={"x-large"}
-          fontWeight={"bold"}
-          pl={10}
-          pt={5}
-          pb={5}
-        >
-          <Link to={"/"}>Green Yard</Link>
-        </Text>
+        <Flex justifyContent={"space-evenly"}>
+          {/* <Text
+            color={"#009a7b"}
+            fontSize={"x-large"}
+            fontWeight={"bold"}
+            pl={10}
+            pt={5}
+            pb={5}
+          >
+            <Link to={"/"}>Green Yard</Link>
+          </Text> */}
+          {/* ------------------- */}
+
+          <Link to={"/"}>
+            <Image
+              src="https://onedrive.live.com/embed?resid=F8906809968D6B81%21204&authkey=%21AKXLZqqwyspKF-s"
+              width="35%"
+            />
+          </Link>
+          <Link to={"/"}>
+            <Image
+              src="https://onedrive.live.com/embed?resid=F8906809968D6B81%21204&authkey=%21AKXLZqqwyspKF-s"
+              width="35%"
+            />
+          </Link>
+        </Flex>
         <hr />
       </Flex>
       {/* -------------------------------------------------------------- */}
@@ -40,7 +56,7 @@ const Navbar = () => {
             fontWeight: "bold",
           }}
         >
-          <Link>Deals</Link>
+          <Link to={"/plants"}>Shop</Link>
         </Box>
         <Box
           _hover={{
@@ -49,7 +65,7 @@ const Navbar = () => {
             fontWeight: "bold",
           }}
         >
-          <Link to="/plants">Plants</Link>
+          <Link>About us</Link>
         </Box>
         <Box
           _hover={{
@@ -58,7 +74,7 @@ const Navbar = () => {
             fontWeight: "bold",
           }}
         >
-          <Link>Planters</Link>
+          <Link>Blog</Link>
         </Box>
         <Box
           _hover={{
@@ -67,7 +83,7 @@ const Navbar = () => {
             fontWeight: "bold",
           }}
         >
-          <Link>Plant Care</Link>
+          <Link>Contact</Link>
         </Box>
         <Box
           _hover={{
@@ -86,42 +102,6 @@ const Navbar = () => {
           }}
         >
           <Link>Home & Decor</Link>
-        </Box>
-        <Box
-          _hover={{
-            color: "#008067",
-            textDecoration: "underline",
-            fontWeight: "bold",
-          }}
-        >
-          <Link>Faux</Link>
-        </Box>
-        <Box
-          _hover={{
-            color: "#008067",
-            textDecoration: "underline",
-            fontWeight: "bold",
-          }}
-        >
-          <Link>Orchids & Flowers</Link>
-        </Box>
-        <Box
-          _hover={{
-            color: "#008067",
-            textDecoration: "underline",
-            fontWeight: "bold",
-          }}
-        >
-          <Link>Stores</Link>
-        </Box>
-        <Box
-          _hover={{
-            color: "#008067",
-            textDecoration: "underline",
-            fontWeight: "bold",
-          }}
-        >
-          <Link>Corporate Gifting</Link>
         </Box>
       </Flex>
     </div>

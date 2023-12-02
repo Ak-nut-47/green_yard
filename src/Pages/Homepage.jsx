@@ -1,6 +1,8 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import Navbar from "../Components/Navbar";
 import Counter from "../Components/Counter";
+import TodoInput from "../Components/TodoInput";
+import TodoList from "../Components/TodoList";
 
 const Homepage = () => {
   return (
@@ -55,8 +57,8 @@ const Homepage = () => {
         </Flex>
         <Flex justifyContent={"right"}>
           <img
-            src="https://onedrive.live.com/embed?resid=F8906809968D6B81%21165&authkey=%21APd-i6uU6KngfgY&width=2250&height=2250"
-            width={"70%"}
+            src="https://onedrive.live.com/embed?resid=F8906809968D6B81%21201&authkey=%21ABEy06eS0NSKfQ4&width=1200&height=1200"
+            width={"90%"}
           />
         </Flex>
       </Flex>
@@ -65,6 +67,12 @@ const Homepage = () => {
       <br />
       <br />
       <Counter />
+      <br />
+      <br />
+      <TodoInput />
+      <br />
+      <br />
+      <TodoList />
       <br />
       <br />
     </div>
