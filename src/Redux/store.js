@@ -1,10 +1,10 @@
-import { legacy_createStore } from "redux";
-import { reducer } from "./reducer";
+import { legacy_createStore } from "redux"
+import { reducer } from "./reducer"
+
 const initialState = {
-    plantsData: [],
-    counter: 0,
+    plants: [],
     isLoading: false,
-    todos: [],
-    isError: false,
-};
-export const store = legacy_createStore(reducer, initialState);
+    isError: false
+}
+
+export const store = legacy_createStore(reducer, initialState)

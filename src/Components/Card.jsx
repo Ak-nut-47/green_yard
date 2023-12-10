@@ -12,9 +12,9 @@ const PlantsCard = ({
     <Card
       maxW="xs"
       border="2px solid #008067"
-      boxShadow="0 6px 10px rgba(0, 0, 0, 0.2)" // Add a subtle shadow
-      backdropFilter="blur(8px)" // Add a frosted glass effect
-      borderRadius="md" // Add rounded corners
+      boxShadow="0 6px 10px rgba(0, 0, 0, 0.2)"
+      backdropFilter="blur(8px)"
+      borderRadius="md"
     >
       <Image src={image} alt={title} loading="lazy" />
 
